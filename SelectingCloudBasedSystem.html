@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Selecting a cloud based financial solution</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Portfolio</strong> by Jess Coulson</a>
+									<ul class="icons">
+										<li><a href="https://www.linkedin.com/in/jess-coulson/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+										<li><a href="mailto:jess.l.coulson@gmail.com" class="icon fa fa-envelope"><span class="label">Email</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>Selecting a cloud based financial solution</h1>
+                                        <h2>Proving operational due diligence</h2>
+                                        <h3>Published on <a href="http://www.bobsguide.com">Bobsguide</a> | 23 September 2015</h3>
+									</header>
+
+									<p>Cloud computing (accessing services via a remote server hosted on the internet, rather than using a local server or PC) has become more and more prevalent in recent years, and vendors are increasingly offering hosted versions of their financial software to customers.</p>
+                                    <p>The benefits of going into the cloud are obvious, including less expense (with no additional servers to buy, house and maintain) as well as increased mobility (accessing the software from any device, from any location). Being able to pass on the burden of supplying and maintaining infrastructure to the software vendor will make a hosted solution an attractive option for start-up fund managers looking to direct their attention towards other concerns than the IT set-up.</p>
+                                    <p>However, there will inevitably be additional security considerations when data will be stored and accessed off-site, and clients will need to be able to satisfy themselves, as part of their due diligence process when selecting a cloud-based system, that their data will be handled appropriately. So what are the main considerations, and what questions should clients be asking of vendors to show due diligence?</p>
+                                    <p>Of prime concern to clients will be the security of any data stored off-site. Question where the host data centres are located and what level (or tier) they are. The highest level, Tier 4 are the most robust and least prone to failures (with a guaranteed 99.995% availability), and are designed for mission critical computer systems.  They provide fully redundant subsystems (power, cooling, network links, etc.) and high levels of security, including biometric access controlled secure zones.</p>
+                                    <p>Another important point to question is how different clients’ systems will be kept separate on the host servers. Does the vendor use virtualisation technology to maintain a division? If so, each client will be allocated their own discrete Virtual Machine and database, completely isolating each system from others on the server to enhance security.</p>
+                                    <p>Question what firewall technology is in place to protect the vendor’s data centres.  Have the firewalls been configured for access with IP address whitelisting? This is a major security safeguard as it ensures that the only traffic allowed through the firewall is from known customer IP addresses. All internet traffic from unknown IP addresses will be blocked. IP address whitelisting will also help against anonymous attacks such as denial of service (DoS) attacks, reducing the chance of service disruption.</p>
+                                    <p>Clients should also question how user access to the system will be managed.  Enquire about the vendor’s policies regarding user passwords, as well as how inactive sessions will be handled. How much time will be allowed before an account is automatically logged out? Does the vendor offer multi-factor authentication, for example using RSA SecurID tokens to provide a unique passcode for each log-in from an unknown location? In this case, without access to the token itself, intruders would have little chance of cracking a user account and gaining access to the system.</p>
+                                    <p>What support hours does the vendor guarantee? With control of their system handed over completely to the vendor, clients must be confident that the support offered is of a high quality and with fast response times. How will any routine maintenance be scheduled on the servers?</p>
+                                    <p>Finally, what will happen in the event of a hardware failure? What disaster recovery measures are in place to cope with a server malfunction?  Is there any potential for data loss in any scenario, and if so, how much?  Clients should question carefully how frequently data is synchronised across redundant systems, since data could potentially be lost in the time between the last update to the secondary and the primary system failure. As a best case solution, vendors could provide primary and secondary systems on separate servers, which are maintained synchronously (for example, using Microsoft’s SQL Server 2012 AlwaysOn Availability Groups synchronous-commit mode). Each database transaction would either succeed on both databases, or fail on both, guaranteeing both remain in sync with each other. If a problem occurred on the primary server, fall-over could be handled automatically to the secondary extremely quickly, with no loss of data.</p>
+                                    <p>In addition to this, what will happen if there is a major incident at the primary data centre? Is a separate disaster recovery system maintained at a different data centre site to guard against a complete data centre failure? Question what the potential for loss of data is in this scenario, and what timescales would be involved in switching sites.  As a final safeguard, are separate automated backups of data maintained, isolated from malware and human error?</p>
+                                    <p>In handing over data and control of business-critical software to an external party, clients must be sure they have a true partnership with the vendor, based on mutual understanding. Once the due diligence process has been completed, clients should have full confidence that any risks have been appropriately mitigated, and that they will be able to fully leverage all the benefits of the cloud while also protecting their sensitive information.</p>
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Homepage</a></li>
+										<li><a href="about.html">About</a></li>
+									</ul>
+								</nav>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Jess Coulson, 2020. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
